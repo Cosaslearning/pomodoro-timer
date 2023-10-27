@@ -1,0 +1,143 @@
+/* CSS styles optimized for the project */
+
+/* Importing Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+/* Base styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Variable definitions */
+:root {
+    /* Colors */ 
+    --white_color: rgb(255, 255, 255);
+    --orange_color: rgb(255, 165, 89);
+    --orange_dark_color: rgb(255, 96, 0);
+    --background_color: linear-gradient(to top left, #b156d9, #213780);
+    --box_shadow : rgba(0,0,0,0.1);
+}
+
+/* Container styling */
+.container {
+    width: 100%;
+    min-height: 100vh;
+    background-image: var(--background_color);
+    padding-bottom: 1rem;
+}
+
+/* Header styling */
+header {
+    padding: 2rem 0;
+    margin: 0 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Logo styling */
+.logo {
+    width: 20rem;
+    height: 6rem;
+}
+
+.logo img {
+    width: 100%;
+    height: 100%;
+}
+
+/* Heading styling */
+h1 {
+    color: var(--white_color);
+    text-align: center;
+    padding: 1rem;
+    border-bottom: 0.2rem var(--orange_color) solid;
+    text-transform: uppercase;
+}
+/* Hero Section*/ 
+.hero_section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+   
+/* Pomodoro Timer Styling*/ 
+.time_box {
+    width: 20rem;
+    height: 20rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border: 0.5rem solid var(--orange_color);
+    border-radius: 50%;
+    margin: 2rem;
+    box-shadow: 0rem 0rem 0.625rem 2.5rem var(--box_shadow);
+}
+#time {
+    text-align: center;
+    color: var(--white_color);
+    font-size: 5rem;
+    font-weight: 600;
+}
+.btns_box {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+button {
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: 0.5s;
+}
+button:hover {
+    background-color: var(--orange_dark_color);
+}
+#start_btn,
+#pause_btn,
+#reset_btn {
+    padding: 1rem 1.5rem;
+    border-radius: 0.5rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: var(--white_color);
+    background-color: var(--orange_color);
+    transition: 0.5s;
+}
+#start_btn:hover,
+#pause_btn:hover,
+#reset_btn:hover {
+    background-color: var(--orange_dark_color);
+}
+.focus_break_btns {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    border: 0.5rem solid var(--orange_color);
+    padding: 1rem;
+    border-radius: 0.5rem;
+    box-shadow: 0rem 0rem 0.625rem 2.5rem var(--box_shadow);
+}
+.btn {
+    padding: 1rem 2rem;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    font-weight: bold;
+    background-color: var(--orange_color);
+    color: var(--white_color);
+}
+.active_btn {
+    background-color: var(--orange_dark_color);
+    color: var(--white_color);
+}
+.hide {
+    display: none;
+}
+.show {
+    display: block;
+}

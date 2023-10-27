@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pomodoro Timer | Cosas Learning</title>
+    <!-- CDN Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" 
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Importing the CSS file -->
+    <link rel="stylesheet" href="style.css">     
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="logo"><img src="logo.png" alt="Logo"></div>
+      <div class="heding"><h1>Pomodoro Timer</h1></div>
+    </header>
+    <div class="hero_section">
+      <div class="time_box">
+        <span id="time"></span>
+        <div class="btns_box">
+          <button id="start_btn" class="show"><i class="fa-solid fa-play"></i></button>
+          <button id="pause_btn" class="hide"><i class="fa-solid fa-pause"></i></button>
+          <button id="reset_btn" class="hide"><i class="fa-solid fa-rotate-right"></i></button>
+        </div>
+      </div>
+      <div class="focus_break_btns">
+        <button id="shortbreak" class="btn">Short Break</button>
+        <button id="focus" class="btn active_btn">Focus</button>
+        <button id="longbreak" class="btn">Long Break</button>
+      </div>        
+    </div>
+  </div>
+  <!-- Importing the JavaScript file -->
+  <script src="script.js"></script>
+</body>
+</html>
